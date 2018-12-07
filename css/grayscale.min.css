@@ -26,7 +26,7 @@
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-    color: fade(white, 80%);
+    color: fade(white, 90%);
     outline: 0;
     background-color: transparent
 }
@@ -121,12 +121,26 @@
     letter-spacing: .9rem;
     background: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.425));
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text
+    -webkit-background-clip: text;
+
+-webkit-animation: jumboAnim 5s 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; 
 }
 
+@keyframes jumboAnim {
+0% {
+  opacity: 0.5;
+}
+
+100% {
+  opacity: 1;
+}
+}
 .masthead h2 {
     /*max-width: 20rem;*/
     font-size: 1rem;
+    color: rgba(255, 255, 255, 0.651);
+
    
 }
 
@@ -156,7 +170,8 @@
 
     .masthead h2 {
         
-        font-size: 1.25rem
+        font-size: 1.25rem;
+        
     }
 }
 
