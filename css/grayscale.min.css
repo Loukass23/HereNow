@@ -123,16 +123,17 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
--webkit-animation: jumboAnim 5s 2; /* Safari 4.0 - 8.0 */
+-webkit-animation: jumboAnim 5s infinite; 
     -webkit-animation-direction: alternate; 
 }
 
 @keyframes jumboAnim {
 0% {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 100% {
+
   opacity: 1;
 }
 }
@@ -142,6 +143,9 @@
     color: rgba(255, 255, 255, 0.651);
 
    
+}
+#video-carousel-example2 {
+    height: 50%;
 }
 
 #welcome-btn{
